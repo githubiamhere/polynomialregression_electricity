@@ -22,6 +22,3 @@ if st.button("Predict"):
         prediction = model.predict(input_data_poly)
         pred = prediction[0]
         st.success(f"Predicted Price: ₹{pred:.2f} Rs")
-import joblib
-joblib.dump(model,"electricity_bill_prediction_model.pkl")
-joblib.dump(poly, "poly.pkl")
